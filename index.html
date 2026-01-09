@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Uncle's Gazette | Author Portfolio</title>
+    <style>
+        /* Modern Reset & Paper Texture */
+        body {
+            background-color: #f4f1ea; /* Newsprint Off-White */
+            color: #1a1a1a;
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 40px 20px;
+            line-height: 1.4;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            border: 1px solid #d1d1d1; /* Subtle outer page border */
+            padding: 20px;
+            background-color: #f4f1ea;
+            box-shadow: 5px 5px 15px rgba(0,0,0,0.05);
+        }
+
+        /* The Masthead */
+        header {
+            text-align: center;
+            border-bottom: 4px double #1a1a1a;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+        }
+
+        header h1 {
+            font-family: 'Old Standard TT', serif; /* Use a Gothic font if available */
+            font-size: 72px;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: -2px;
+        }
+
+        .sub-header {
+            display: flex;
+            justify-content: space-between;
+            border-top: 1px solid #1a1a1a;
+            border-bottom: 1px solid #1a1a1a;
+            padding: 5px 0;
+            margin-top: 5px;
+            font-size: 14px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        /* Newspaper Columns */
+        .main-content {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 30px;
+            margin-top: 20px;
+        }
+
+        /* Bio Column */
+        .bio-col {
+            border-right: 1px solid #d1d1d1;
+            padding-right: 30px;
+        }
+
+        .portrait {
+            width: 100%;
+            filter: grayscale(100%) contrast(110%);
+            border: 1px solid #1a1a1a;
+            margin-bottom: 10px;
+        }
+
+        .caption {
+            font-size: 12px;
+            font-style: italic;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        /* Article Column */
+        .article-col h2 {
+            font-size: 36px;
+            margin: 0 0 15px 0;
+            line-height: 1;
+            font-family: 'Georgia', serif;
+        }
+
+        .drop-cap {
+            float: left;
+            font-size: 80px;
+            line-height: 60px;
+            padding-top: 4px;
+            padding-right: 8px;
+            font-family: 'Georgia', serif;
+        }
+
+        .body-text {
+            column-count: 2;
+            column-gap: 20px;
+            text-align: justify;
+            hyphens: auto;
+        }
+
+        /* Book Showcase Section */
+        .books-section {
+            margin-top: 40px;
+            border-top: 3px solid #1a1a1a;
+            padding-top: 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 24px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            background: #1a1a1a;
+            color: #f4f1ea;
+            display: inline-block;
+            padding: 2px 15px;
+        }
+
+        @media (max-width: 768px) {
+            .main-content { grid-template-columns: 1fr; }
+            .bio-col { border-right: none; padding-right: 0; }
+            .body-text { column-count: 1; }
+            header h1 { font-size: 40px; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>THE GAZETTE</h1>
+        <div class="sub-header">
+            <span>Vol. XL — No. 01</span>
+            <span>THURSDAY, JANUARY 8, 2026</span>
+            <span>PRICE: ONE PENNY</span>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <aside class="bio-col">
+            <img src="https://via.placeholder.com/400x500?text=Uncle+Portrait" alt="Author Portrait" class="portrait">
+            <span class="caption">The author pictured in his home study, circa 2025.</span>
+            
+            <p><strong>BORN:</strong> 1956, Chicago</p>
+            <p><strong>BEAT:</strong> Investigative Journalism, City Hall</p>
+            <p><strong>AWARDS:</strong> 2x Press Club Award</p>
+        </aside>
+
+        <article class="article-col">
+            <h2>FORTY YEARS AT THE FRONT LINE OF TRUTH</h2>
+            <div class="body-text">
+                <span class="drop-cap">F</span>
+                or four decades, my uncle covered the stories that defined a generation. From the smoky backrooms of local politics to the international headlines that shook the world, he carried a notepad and a relentless pursuit of the facts. 
+                <br><br>
+                Today, that same investigative rigor is poured into his literary works. His transition from daily deadlines to long-form storytelling marks a new chapter in a storied career. He remains a firm believer that while the ink may dry, the story never truly ends.
+            </div>
+        </article>
+    </main>
+
+    <section class="books-section">
+        <center><div class="section-title">Latest Publications</div></center>
+        <p style="text-align: center; font-style: italic;">Select a volume below to read more about the work.</p>
+    </section>
+</div>
+
+</body>
+</html>
