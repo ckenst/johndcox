@@ -206,3 +206,20 @@ header h1 {
     background: #1a1a1a;
     color: #f4f1ea;
 }
+
+.site-footer {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 14px;
+    letter-spacing: 0.05em;
+}
+
+.site-footer a {
+    color: #1a1a1a;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.site-footer a:hover {
+    text-decoration: underline;
+}
